@@ -1,0 +1,46 @@
+body,
+html {
+    font-family: sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: center;
+}
+
+.box .tocontent {
+    flex: 0 1 auto;
+}
+
+.box .fillspace {
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.labHeader {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    max-width: 70%;
+}
+
+.labDescription {
+    margin-top: 0;
+    margin-bottom: 0.5%;
+    max-width: 70%;
+}
+
+#mainRender {
+    width: 90%;
+    height: 90%;
+    border: 3px solid gray;
+}
+
+#start {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 5%;
+}
