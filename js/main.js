@@ -45,8 +45,7 @@ function start(engine) {
     let objCount = $("#count").val();
     let interval = setInterval(() => {
         addRandomObject(engine);
-        --objCount;
-        if (objCount === 0) {
+        if ((--objCount) === 0) {
             clearInterval(interval);
         }
     }, 100);
