@@ -112,13 +112,9 @@ export class Portal {
 
     process(objects) {
         let moveVector = subVec2D(this.#exRenderable.shape.rVector, this.#entRenderable.shape.rVector);
-        //console.log(moveVector);
         for (let obj of objects) {
             if (this.#entCollider.isColliding(obj.collider)) {
-                console.log(moveVector);
-                console.log(obj.collider.shape.rVector);
                 obj.moveRelative(moveVector.div(2));
-                console.log(obj.collider.shape.rVector);
             }
         }
     }
